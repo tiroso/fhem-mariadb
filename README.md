@@ -4,9 +4,7 @@
 <p>Create Volume for persistent data:<br>
 <code>docker volume create mariadb</code><br>
 Run Docker Container with access to the volume<br>
-<code>docker run -d --name=mariadb --restart=always -v /etc/localtime:/etc/localtime:ro -e MYSQL_ROOT_PASSWORD=your-secret-passwort -v mariadb:/var/lib/mysql \<br>
--p 3306:3306 \<br>
-mariadb:latest</code>
+<code>docker run -d --name=mariadb --restart=always -v /etc/localtime:/etc/localtime:ro -e MYSQL_ROOT_PASSWORD=your-secret-password -vv mariadb:/var/lib/mysql -p 3306:3306 mariadb:latest</code>
 </p>
 <h2>Create phpmyadmin</h2>
 <p>This Step is optional. Just for looking to the DB or make some changes</p>
